@@ -1,0 +1,114 @@
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('../fonts/ProximaNova/proximanova_regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('../fonts/ProximaNova/proximanova_bold.otf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('../fonts/ProximaNova/proximanova_black.otf') format('truetype');
+  font-weight: 900;
+  /* Peso para Black */
+  font-style: normal;
+}
+
+
+html,
+body {
+  margin: 0;
+  font-family: 'Proxima Nova', sans-serif;
+  background-color: black;
+}
+
+header {
+  font-family: 'Proxima Nova', sans-serif;
+  height: 70px;
+  text-decoration: none;
+  color: white;
+  z-index: 55;
+}
+
+.seccionH {
+  position: fixed;
+  z-index: 55;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+  transition: 0.2s;
+  padding: 10px;
+}
+
+header a:hover {
+  text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white, 0 0 20px white;
+  color: white;
+}
+
+.hero {
+  font-family: 'Proxima Nova', sans-serif;
+  height: 100vh;
+  background-image: url("../../assets/images/hero1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.hero2 {
+  background-image: url("../../assets/images/hero2.jpeg");
+}
+
+.hero3 {
+  background-image: url("../../assets/images/hero3.jpg");
+}
+
+html {
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: black;
+  /* Color del fondo */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 10px;
+}
+
+.cuadradin {
+  background-image: url("../images/cuadradin.webp");
+  background-size: 200px 110px;
+  background-repeat: no-repeat;
+}
+#botonP {
+  all: unset;
+  padding: 10px;
+  background-color: #0750d0;
+  background-image: linear-gradient(135deg, #a1052c, #0750d0);
+  color: white;
+  transition: 0.5s;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#botonP:hover {
+  background-image: none;
+}
+section{
+  color: white;
+  font-family: 'Proxima Nova', sans-serif;
+}
