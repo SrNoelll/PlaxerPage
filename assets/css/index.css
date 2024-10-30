@@ -112,3 +112,9 @@ section{
   color: white;
   font-family: 'Proxima Nova', sans-serif;
 }
+.celda{
+  transition: 0.3s ease-in;
+}
+.celda:hover{
+background-color: #0750d0;
+}
