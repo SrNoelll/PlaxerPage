@@ -53,6 +53,9 @@ header a:hover {
   color: white;
 }
 
+header.scrolled {
+  background-color: black;
+}
 .hero {
   font-family: 'Proxima Nova', sans-serif;
   height: 100vh;
@@ -63,7 +66,7 @@ header a:hover {
 }
 
 .hero2 {
-  background-image: url("../../assets/images/hero2.jpeg");
+  background-image: url("../../assets/images/hero2.jpg");
 }
 
 .hero3 {
@@ -80,7 +83,6 @@ html {
 
 ::-webkit-scrollbar-track {
   background: black;
-  /* Color del fondo */
   border-radius: 10px;
 }
 
@@ -95,26 +97,99 @@ html {
   background-repeat: no-repeat;
 }
 #botonP {
-  all: unset;
-  padding: 10px;
-  background-color: #0750d0;
-  background-image: linear-gradient(135deg, #a1052c, #0750d0);
-  color: white;
-  transition: 0.5s;
-  text-decoration: none;
+  position: relative;
+  color: #fff;
+  background: linear-gradient(135deg, #a1052c, #0750d0);
+  width: fit-content;
+  font-family: "Poppins", sans-serif;
+  padding: 10px 15px;
+  margin: 20px 0;
+  border-radius: 5px;
+  font-weight: 500;
+  border: none;
   cursor: pointer;
+  overflow: hidden;
+  transition: color 0.5s;
 }
 
-#botonP:hover {
-  background-image: none;
+#botonP::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, #790422, #06388f);
+  opacity: 0;
+  transition: opacity 0.5s;
+  z-index: -1;
 }
+
+#botonP:hover::before {
+  opacity: 1;
+}
+
+#botonP {
+  position: relative;
+  z-index: 1;
+}
+
+
 section{
   color: white;
   font-family: 'Proxima Nova', sans-serif;
 }
-.celda{
-  transition: 0.3s ease-in;
+.celda {
+  position: relative;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 350px;
+  background-color: #090909;
+  overflow: hidden;
+  transition: 0.5s;
 }
-.celda:hover{
-background-color: #0750d0;
+
+.celda::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, #61041c, #053484);
+  opacity: 0;
+  transition: opacity 0.5s;
+  z-index: 0;
+}
+
+.celda:hover::before {
+  opacity: 1;
+}
+
+.celda * {
+  position: relative;
+  z-index: 1;
+}
+
+video{
+  width: 100%;
+}
+#botonLeer {
+  position: relative;
+  color: #fff;
+  background: linear-gradient(105deg, transparent 0% 10%, #790422 12%, #06388f 90%, transparent 92%);
+  background-size: 40% 6px;
+  background-repeat: no-repeat;
+  background-position:  right bottom;
+  font-family: "Poppins", sans-serif;
+  padding: 10px 15px;
+  margin: 20px 0;
+  border: none;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+#botonLeer:hover {
+  background-size: 100% 100%;
 }
