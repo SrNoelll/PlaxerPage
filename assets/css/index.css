@@ -193,17 +193,11 @@ video{
 #botonLeer:hover {
   background-size: 100% 100%;
 }
-.juego{
-  height: 350px;
-  background-color: #06388f;
+
+
+.card-img-overlay {
+  background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
 }
-.juego div{
-  height:auto;
-  width:100%;
-  background-image: url("../images/juego1.png");
-  background-color: #a1052c;
+.card-title {
+  font-size: 1.2rem;
 }
-.juego div img{
-  height: auto;
-  width: 100%;
-} 
