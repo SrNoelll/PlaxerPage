@@ -201,3 +201,22 @@ video{
 .card-title {
   font-size: 1.2rem;
 }
+
+.fondoQuieto{
+  background: url("../images/hero2.jpg");
+  background-attachment: fixed;
+  padding: 70px;
+}
+.fondoQuieto h5{
+  margin-left: 25px;
+}
+
+/* Estilo inicial del header */
+#header {
+  transition: background-color 0.5s ease, padding 0.5s ease;
+}
+
+/* Estilo cuando se hace scroll */
+.header-scrolled {
+  background-color: black !important;
+}
