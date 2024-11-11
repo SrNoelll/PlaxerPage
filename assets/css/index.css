@@ -56,6 +56,7 @@ header a:hover {
 header.scrolled {
   background-color: black;
 }
+
 .hero {
   font-family: 'Proxima Nova', sans-serif;
   height: 100vh;
@@ -96,6 +97,7 @@ html {
   background-size: 200px 110px;
   background-repeat: no-repeat;
 }
+
 #botonP {
   position: relative;
   color: #fff;
@@ -135,10 +137,11 @@ html {
 }
 
 
-section{
+section {
   color: white;
   font-family: 'Proxima Nova', sans-serif;
 }
+
 .celda {
   position: relative;
   justify-content: center;
@@ -173,16 +176,17 @@ section{
   z-index: 1;
 }
 
-video{
+video {
   width: 100%;
 }
+
 #botonLeer {
   position: relative;
   color: #fff;
   background: linear-gradient(105deg, transparent 0% 10%, #a1052c 12%, #0750d0 90%, transparent 92%);
   background-size: 40% 6px;
   background-repeat: no-repeat;
-  background-position:  right bottom;
+  background-position: right bottom;
   font-family: "Poppins", sans-serif;
   padding: 10px 15px;
   margin: 20px 0;
@@ -190,6 +194,7 @@ video{
   cursor: pointer;
   transition: all 0.4s;
 }
+
 #botonLeer:hover {
   background-size: 100% 100%;
 }
@@ -198,16 +203,18 @@ video{
 .card-img-overlay {
   background: rgba(0, 0, 0, 0.5);
 }
+
 .card-title {
   font-size: 1.2rem;
 }
 
-.fondoQuieto{
+.fondoQuieto {
   background: url("../images/hero2.jpg");
   background-attachment: fixed;
   padding: 70px;
 }
-.fondoQuieto h5{
+
+.fondoQuieto h5 {
   margin-left: 25px;
 }
 
@@ -219,4 +226,52 @@ video{
 /* Estilo cuando se hace scroll */
 .header-scrolled {
   background-color: black !important;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 0;
+}
+
+.footer a {
+  color: #fff;
+}
+
+.footer a:hover {
+  text-decoration: none;
+}
+
+.footer .social-icons a {
+  margin-right: 10px;
+}
+
+.footer .back-to-top {
+  text-align: right;
+}
+
+.footer input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.footer button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+}
+
+.footer button:hover {
+  background-color: #0056b3;
+}
+
+* {
+  font-family: 'Proxima Nova', sans-serif;
+  color: white;
 }
