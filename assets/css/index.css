@@ -136,12 +136,6 @@ html {
   z-index: 1;
 }
 
-
-section {
-  color: white;
-  font-family: 'Proxima Nova', sans-serif;
-}
-
 .celda {
   position: relative;
   justify-content: center;
@@ -274,4 +268,25 @@ video {
 * {
   font-family: 'Proxima Nova', sans-serif;
   color: white;
+}
+.partido::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, #a1052c, #0750d0);
+  opacity: 0;
+  transition: opacity 0.5s;
+  z-index: 0;
+}
+
+.partido:hover::before {
+  opacity: 1;
+}
+
+.partido * {
+  position: relative;
+  z-index: 1;
 }
