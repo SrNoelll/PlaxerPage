@@ -55,3 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
   
+  function openModal(image) {
+    document.getElementById('modalImage').src = image.src;
+    $('#imageModal').modal('show');
+  }

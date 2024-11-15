@@ -290,3 +290,78 @@ video {
   position: relative;
   z-index: 1;
 }
+
+
+.imagenGal img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease; /* Añadir una transición suave */
+}
+
+.imagenGal img:hover {
+  transform: scale(1.05); /* Efecto de zoom al pasar el ratón */
+}
+
+/* Ajustar el tamaño y estilo de la imagen en el modal */
+.modal-content {
+  background-color: transparent;
+  border: none;
+}
+
+#modalImage {
+  width: 100%;
+  height: auto;
+  border-radius: 0;
+}
+.imagenGal img{
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.imagenGal {
+  position: relative;
+  overflow: hidden;
+}
+
+.imagenGal img {
+  width: 100%;
+  height: 400px;
+  transition: transform 0.3s ease; /* Efecto de zoom */
+  cursor: pointer;
+}
+
+/* Efecto de zoom al pasar el ratón */
+.imagenGal:hover img {
+  transform: scale(1.1);
+}
+
+/* Capa de color y texto en el overlay */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6); /* Capa de color semitransparente */
+  color: white;
+  width: 100%;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Mostrar la capa de color y texto al hacer hover */
+.imagenGal:hover .overlay {
+  opacity: 1;
+}
+
+/* Estilo del título */
+.overlay h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+/* Estilo del subtítulo */
+.overlay p {
+  margin: 5px 0 0;
+  font-size: 12px;
+}

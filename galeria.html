@@ -8,12 +8,19 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
   <title>PLAXER</title>
+  <style>
+    #header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+  </style>
 </head>
 
 <body class="bg-black">
   <section id="header" class="container-fluid seccionH">
     <header class="container d-flex align-items-center">
-      <a class="col-4 col-md-2 navbar-brand" href="#">
+      <a class="col-4 col-md-2 navbar-brand" href="index.html">
         <img src="assets/images/logo-light.png" alt="" height="40" />
       </a>
       <div class="col-2 col-md-4"></div>
@@ -27,14 +34,73 @@
     </header>
   </section>
 
+  <section class="container-fluid bg-dark py-4">
+    <div class="container"><h1>Gallery</h1></div>
+  </section>
+  <section class="container">
+    <p class="my-3">ALL / CSGO / DOTA 2 / FORTNITE / PUBG / STREAMS</p>
+    <div class="container row">
+      <div class="col-lg-6 col-md-12 imagenGal py-3">
+        <img src="assets/images/hero1.jpg" onclick="openModal(this)">
+        <div class="overlay">
+          <h3>Imagen 1</h3>
+          <p>Descripción de la imagen 1</p>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-12 imagenGal py-3">
+        <img src="assets/images/hero2.jpg" onclick="openModal(this)">
+        <div class="overlay">
+          <h3>Imagen 2</h3>
+          <p>Descripción de la imagen 2</p>
+        </div>
+      </div>
+    </div>
+    <div class="container row">
+      <div class="col-lg-6 col-md-12 imagenGal py-3">
+        <img src="assets/images/hero3.jpg" onclick="openModal(this)">
+        <div class="overlay">
+          <h3>Imagen 3</h3>
+          <p>Descripción de la imagen 3</p>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-12 imagenGal py-3">
+        <img src="assets/images/ia1.jpeg" onclick="openModal(this)">
+        <div class="overlay">
+          <h3>Imagen 4</h3>
+          <p>Descripción de la imagen 4</p>
+        </div>
+      </div>
+    </div>
+    <div class="container row">
+      <div class="col-lg-6 col-md-12 imagenGal py-3">
+        <img src="assets/images/ia3.jpeg" onclick="openModal(this)">
+        <div class="overlay">
+          <h3>Imagen 5</h3>
+          <p>Descripción de la imagen 5</p>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-12 imagenGal py-3">
+        <img src="assets/images/ia2.jpeg" onclick="openModal(this)">
+        <div class="overlay">
+          <h3>Imagen 6</h3>
+          <p>Descripción de la imagen 6</p>
+        </div>
+      </div>
+    </div>
+  </section>
   
-
-
-
-
-
-
   
+  <!-- Modal de Bootstrap -->
+  <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body p-0">
+          <img id="modalImage" src="" class="img-fluid" alt="Imagen ampliada">
+        </div>
+      </div>
+    </div>
+  </div>
+
   <footer class="footer">
     <div class="container">
       <div class="row">
