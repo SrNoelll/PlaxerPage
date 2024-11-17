@@ -20,18 +20,34 @@
 <body class="bg-black">
   <section id="header" class="container-fluid seccionH">
     <header class="container d-flex align-items-center">
-      <a class="col-4 col-md-2 navbar-brand" href="index.html">
-        <img src="assets/images/logo-light.png" alt="" height="40" />
+      <a class="col-6" href="index.html">
+        <img src="assets/images/logo-light.png" alt="" height="40px"/>
       </a>
-      <div class="col-2 col-md-4"></div>
-      <div class="col-6 col-md-6 d-flex justify-content-around">
+
+      <button class="d-md-none navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <img src="assets/images/menu.png" alt="Menu" class="col-1 img-fluid"/>
+      </button>
+
+      <div class="col-6 d-none d-md-flex justify-content-around">
         <a href="index.html">Home</a>
-        <a href="sobreNosotros.html">Abaut Us</a>
+        <a href="sobreNosotros.html">About Us</a>
         <a href="blog.html">Blog</a>
         <a href="galeria.html">Gallery</a>
         <a href="tienda.html">Shop</a>
         <a href="">Contacts</a>
       </div>
+
+      <div class="collapse navbar-collapse px-4" id="navbarNav">
+        <div class="navbar-nav">
+          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link" href="sobreNosotros.html">About Us</a>
+          <a class="nav-link" href="blog.html">Blog</a>
+          <a class="nav-link" href="galeria.html">Gallery</a>
+          <a class="nav-link" href="tienda.html">Shop</a>
+          <a class="nav-link" href="">Contacts</a>
+        </div>
+      </div>
+  
     </header>
   </section>
 

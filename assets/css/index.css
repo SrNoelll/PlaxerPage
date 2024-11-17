@@ -26,6 +26,7 @@ body {
   margin: 0;
   font-family: 'Proxima Nova', sans-serif;
   background-color: black;
+  margin: 0;
 }
 
 header {
@@ -54,8 +55,31 @@ header a:hover {
 }
 
 header.scrolled {
-  background-color: black;
+  background-color: #090909;
 }
+
+
+/* Asegura que el menú no se corte y se muestre debajo del botón */
+#navbarNav {
+  position: absolute;
+  top: 60px; /* Ajusta este valor para mover el menú más abajo o más arriba */
+  left: 0;
+  right: 0;
+  background-color: #333; /* Fondo para que el menú se distinga, personaliza según tu diseño */
+  z-index: 1000; /* Asegura que el menú se quede encima de otros elementos */
+  width: 100%;
+}
+
+/* Asegura que los enlaces estén bien alineados en el menú */
+.navbar-nav {
+  flex-direction: column; /* Alinea los enlaces verticalmente */
+}
+
+.nav-link {
+  color: #fff; /* Cambia el color de los enlaces a blanco */
+  padding: 10px 20px; /* Añade un poco de espacio alrededor de los enlaces */
+}
+
 
 .hero {
   font-family: 'Proxima Nova', sans-serif;
@@ -76,6 +100,7 @@ header.scrolled {
 
 html {
   overflow-y: scroll;
+  margin: 0;
 }
 
 ::-webkit-scrollbar {
@@ -371,9 +396,25 @@ video {
   object-fit: cover;
 }
 
+.acordeon button:not(collapsed){
+  color: #fff;
+  background: linear-gradient(105deg, transparent 0% 10%, #a1052c 12%, #0750d0 90%, transparent 92%);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  transition: all 0.4s;
+}
 
+.acordeon button.collapsed{
+  background-size: 0%;
+  border: none;
+}
 
-
+.acordeon button:hover{
+  color: #0750d0;
+}
 
 
 .tags p{
@@ -382,6 +423,17 @@ video {
 .tags p:hover{
 background-color: #0750d0;
 }
+
+.momento:hover{
+  background-color: #a1052c;
+}
+.momento{
+  background-color: #0750d0;
+  transition: all 500ms;
+}
+
+
+
 
 .bg-back{
   color: #fff;
