@@ -16,7 +16,6 @@
   font-family: 'Proxima Nova';
   src: url('../fonts/ProximaNova/proximanova_black.otf') format('truetype');
   font-weight: 900;
-  /* Peso para Black */
   font-style: normal;
 }
 
@@ -55,7 +54,7 @@ header a:hover {
 }
 
 header.scrolled {
-  background-color: #090909;
+  background-color: #333;
 }
 
 
@@ -84,18 +83,18 @@ header.scrolled {
 .hero {
   font-family: 'Proxima Nova', sans-serif;
   height: 100vh;
-  background-image: url("../../assets/images/hero1.jpg");
+  background-image: url("../../assets/images/hero1.webp");
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
 }
 
 .hero2 {
-  background-image: url("../../assets/images/hero2.jpg");
+  background-image: url("../../assets/images/hero2.webp");
 }
 
 .hero3 {
-  background-image: url("../../assets/images/hero3.jpg");
+  background-image: url("../../assets/images/hero3.webp");
 }
 
 html {
@@ -167,7 +166,7 @@ html {
   display: flex;
   align-items: center;
   flex-direction: column;
-  height: 350px;
+  min-height: 350px;
   background-color: #090909;
   overflow: hidden;
   transition: 0.5s;
@@ -228,7 +227,7 @@ video {
 }
 
 .fondoQuieto {
-  background: url("../images/hero2.jpg");
+  background: url("../images/hero2.webp");
   background-attachment: fixed;
   padding: 70px;
 }
