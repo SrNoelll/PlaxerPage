@@ -7,8 +7,8 @@
   <link rel="stylesheet" href="assets/css/index.css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-    <link rel="icon" href="assets/images/icon.webp" type="image/webp" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link rel="icon" href="assets/images/icon.webp" type="image/webp" />
   <title>PLAXER</title>
 </head>
 
@@ -16,13 +16,14 @@
   <section id="header" class="container-fluid seccionH">
     <header class="container d-flex align-items-center">
       <a class="col-6" href="index.html">
-        <img src="assets/images/logo-light.webp" alt="" height="40px"/>
+        <img src="assets/images/logo-light.webp" alt="" height="40px" />
       </a>
 
-      <button class="d-md-none navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <img src="assets/images/menu.webp" alt="Menu" class="col-1 img-fluid"/>
+      <button class="d-md-none navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNav">
+        <img src="assets/images/menu.webp" alt="Menu" class="col-1 img-fluid" />
       </button>
-
+      <!-- menu para pantallas grandes -->
       <div class="col-6 d-none d-md-flex justify-content-around">
         <a href="index.html">Home</a>
         <a href="sobreNosotros.html">About Us</a>
@@ -31,7 +32,7 @@
         <a href="tienda.html">Shop</a>
         <a href="">Contacts</a>
       </div>
-
+      <!-- menu para pantallas pequenias -->
       <div class="collapse navbar-collapse px-4" id="navbarNav">
         <div class="navbar-nav">
           <a class="nav-link" href="index.html">Home</a>
@@ -42,21 +43,21 @@
           <a class="nav-link" href="contacto.html">Contacts</a>
         </div>
       </div>
-  
+
     </header>
   </section>
-
+  <!-- carousel -->
   <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
       <!-- Primera sección del carrusel -->
       <div class="carousel-item active">
         <section class="hero container-fluid d-flex align-items-center custom-margin">
           <div class="container">
-          <div class="col-lg-4 col-md-6 col-6 cuadradin">
-            <h5>01</h5>
-            <h1 class="ms-4">Games with & memorable design</h1>
-            <button id="botonP" class="ms-4">Watch now</button>
-          </div>
+            <div class="col-lg-4 col-md-6 col-6 cuadradin">
+              <h5>01</h5>
+              <h1 class="ms-4">Games with & memorable design</h1>
+              <button id="botonP" class="ms-4">Watch now</button>
+            </div>
           </div>
         </section>
       </div>
@@ -70,7 +71,7 @@
               <h1 class="ms-4">Games with & memorable design</h1>
               <button id="botonP" class="ms-4">Watch now</button>
             </div>
-            </div>
+          </div>
         </section>
       </div>
 
@@ -83,7 +84,7 @@
               <h1 class="ms-4">Games with & memorable design</h1>
               <button id="botonP" class="ms-4">Watch now</button>
             </div>
-            </div>
+          </div>
         </section>
       </div>
     </div>
@@ -98,7 +99,7 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-
+  <!-- targetas -->
   <section class="container-fluid d-flex align-items-center justify-content-center text-center">
     <div class="container row justify-content-center">
       <div class="celda col-lg-3 col-md-12 col-sm-12 m-3 p-4">
@@ -118,24 +119,26 @@
       </div>
     </div>
   </section>
-  
 
+  <!-- sobre nsosotros con video -->
   <section class="sobreNosotros container my-5 p-4">
     <div class="row">
-        <div class="col-lg-6 col-md-12 col-sm-12 p-5">
-            <div>
-                <h1>Game theme for each direction and more.</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
-            </div>
-            <button id="botonLeer" class="px-4">Read More</button>
+      <div class="col-lg-6 col-md-12 col-sm-12 p-5">
+        <div>
+          <h1>Game theme for each direction and more.</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus
+            vel facilisis.</p>
         </div>
-        <div class="col-lg-5 col-md-12 col-sm-12">
-            <video src="assets/images/teclado.mp4" autoplay muted loop class="w-100"></video>
-        </div>
+        <button id="botonLeer" class="px-4">Read More</button>
+      </div>
+      <div class="col-lg-5 col-md-12 col-sm-12">
+        <video src="assets/images/teclado.mp4" autoplay muted loop class="w-100"></video>
+      </div>
     </div>
-</section>
+  </section>
 
-
+  <!-- seccion de eventos -->
   <section class="container-fluid my-5">
     <div class="row">
       <!-- Card 1 -->
@@ -187,7 +190,7 @@
     </div>
   </section>
   </section>
-
+  <!-- ultimos partidos -->
   <section class="container my-5 text-white">
     <h2 class="text-primary mb-4">Últimos Partidos</h2>
     <div class="list-group">
@@ -289,11 +292,8 @@
       </div>
 
     </div>
-</section>
-
-
-
-
+  </section>
+  <!-- seccion fondo fijo -->
   <section class="container-fluid d-flex align-items-center custom-margin fondoQuieto">
     <div class=" container cuadradin p-3">
       <h1 class="ms-4">UNICON & GAME EXPO</h1>
@@ -302,7 +302,7 @@
       <button id="botonP" class="ms-4">View Shedule</button>
     </div>
   </section>
-
+  <!-- seccion redes sociales estadisticas -->
   <section class="container-fluid d-flex justify-content-center my-5">
     <div class="container row">
       <div class="col-lg-3 col-md-6 col-6 text-center">
@@ -322,59 +322,56 @@
         <h3 data-target="256">0</h3>
       </div>
     </div>
-    
   </section>
 
-
+  <!-- galeria de imagenes -->
   <div class="d-flex align-items-center text-center container p-0">
     <h1 class="col-12 p-5">Share with <span class="text-primary">#PLAXER</span></h1>
-</div>
-<div class="d-flex align-items-center text-center container p-0">
+  </div>
+  <div class="d-flex align-items-center text-center container p-0">
     <p style="margin-top: -35px; margin-bottom: 35px;" class="col-12">Follow me @plaxer</p>
-</div>
-<section class="container-fluid p-0">
+  </div>
+  <section class="container-fluid p-0">
     <div class="row g-0">
-        <div class="col-lg-1 col-md-3 col-4 p-0">
-            <img class="w-100" src="assets/images/ia1.webp" alt="">
-        </div>
-        <div class="col-lg-1 col-md-3 col-4 p-0"">
-            <img class="w-100" src="assets/images/ia2.webp" alt="">
-        </div>
-        <div class="col-lg-1 col-md-3 col-4 p-0">
-            <img class="w-100" src="assets/images/ia3.webp" alt="">
-        </div>
-        <div class="col-lg-1 col-md-3 col-4 p-0">
-            <img class="w-100" src="assets/images/ia1.webp" alt="">
-        </div>
-        <div class="col-lg-1 col-md-3 col-4 p-0">
-            <img class="w-100" src="assets/images/ia2.webp" alt="">
-        </div>
-        <div class="col-lg-1 col-md-3 col-4 p-0">
-            <img class="w-100" src="assets/images/ia3.webp" alt="">
-        </div>
-        <div class="col-lg-1 col-md-3 col-4 p-0">
-            <img class="w-100" src="assets/images/ia1.webp" alt="">
-        </div>
-        <div class="col-lg-1 col-md-3 col-4 p-0">
-            <img class="w-100" src="assets/images/ia2.webp" alt="">
-        </div>
-        <div class="col-lg-1 col-md-3 col-4 p-0">
-            <img class="w-100" src="assets/images/ia3.webp" alt="">
-        </div>
-        <div class="col-lg-1 col-md-3 col-4 p-0">
-            <img class="w-100" src="assets/images/ia1.webp" alt="">
-        </div>
-        <div class="col-lg-1 col-md-3 col-4 p-0">
-            <img class="w-100" src="assets/images/ia2.webp" alt="">
-        </div>
-        <div class="col-lg-1 col-md-3 col-4 p-0">
-            <img class="w-100" src="assets/images/ia3.webp" alt="">
-        </div>
+      <div class="col-lg-1 col-md-3 col-4 p-0">
+        <img class="w-100" src="assets/images/ia1.webp" alt="">
+      </div>
+      <div class="col-lg-1 col-md-3 col-4 p-0"">
+            <img class=" w-100" src="assets/images/ia2.webp" alt="">
+      </div>
+      <div class="col-lg-1 col-md-3 col-4 p-0">
+        <img class="w-100" src="assets/images/ia3.webp" alt="">
+      </div>
+      <div class="col-lg-1 col-md-3 col-4 p-0">
+        <img class="w-100" src="assets/images/ia1.webp" alt="">
+      </div>
+      <div class="col-lg-1 col-md-3 col-4 p-0">
+        <img class="w-100" src="assets/images/ia2.webp" alt="">
+      </div>
+      <div class="col-lg-1 col-md-3 col-4 p-0">
+        <img class="w-100" src="assets/images/ia3.webp" alt="">
+      </div>
+      <div class="col-lg-1 col-md-3 col-4 p-0">
+        <img class="w-100" src="assets/images/ia1.webp" alt="">
+      </div>
+      <div class="col-lg-1 col-md-3 col-4 p-0">
+        <img class="w-100" src="assets/images/ia2.webp" alt="">
+      </div>
+      <div class="col-lg-1 col-md-3 col-4 p-0">
+        <img class="w-100" src="assets/images/ia3.webp" alt="">
+      </div>
+      <div class="col-lg-1 col-md-3 col-4 p-0">
+        <img class="w-100" src="assets/images/ia1.webp" alt="">
+      </div>
+      <div class="col-lg-1 col-md-3 col-4 p-0">
+        <img class="w-100" src="assets/images/ia2.webp" alt="">
+      </div>
+      <div class="col-lg-1 col-md-3 col-4 p-0">
+        <img class="w-100" src="assets/images/ia3.webp" alt="">
+      </div>
     </div>
-</section>
-
-
-
+  </section>
+  <!-- pie de pagina-->
   <footer class="footer">
     <div class="container">
       <div class="row">
@@ -425,7 +422,10 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script> <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script> <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
